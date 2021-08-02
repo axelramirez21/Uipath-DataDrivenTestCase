@@ -1,5 +1,5 @@
 {
-  "name": "TestSuite",
+  "name": "TestSuiteProcess",
   "description": "UiPath Academy helper\r\n",
   "main": "SHA_Check.xaml",
   "dependencies": {
