@@ -22,8 +22,3 @@ steps:
     testSet : 'TestSetDemo'
     orchestratorConnection: 'Uipath Orchestrator Cloud'
     folderName: 'Default/development'
-- task: UiPathDeploy@2
-  inputs:
-    orchestratorConnection: 'Uipath Orchestrator Cloud'
-    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
-    folderName: 'Default/development'
