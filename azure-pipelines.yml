@@ -1,0 +1,29 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: UiPathPack@2
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.SourcesDirectory)'
+    orchestratorConnection: 'Uipath Orchestrator Cloud'
+    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+- task: UiPathTest@2
+  inputs:
+    testTarget: 'TestSet'
+    testSet : 'TestSetDemo'
+    orchestratorConnection: 'Uipath Orchestrator Cloud'
+    folderName: 'Default/development'
+- task: UiPathDeploy@2
+  inputs:
+    orchestratorConnection: 'Uipath Orchestrator Cloud'
+    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
+    folderName: 'Default/development'
