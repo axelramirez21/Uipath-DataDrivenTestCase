@@ -12,10 +12,12 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.5.0.0",
-  "projectVersion": "1.0.81627409",
+  "projectVersion": "1.0.81627410",
   "runtimeOptions": {
     "autoDispose": false,
+    "netFrameworkLazyLoading": false,
     "isPausable": true,
+    "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
     "excludedLoggedData": [
@@ -24,7 +26,8 @@
     ],
     "executionType": "Workflow",
     "readyForPiP": false,
-    "startsInPiP": false
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": false
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -41,6 +44,7 @@
         "editingStatus": "Publishable",
         "testCaseId": "1e50819d-ccc2-4bae-b786-5489e15b3535",
         "dataVariationFilePath": ".variations\\Results_Sheet1.json",
+        "testCaseType": "TestCase",
         "fileName": "DataDrivenTestCase.xaml"
       }
     ],
