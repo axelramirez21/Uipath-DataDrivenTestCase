@@ -1,7 +1,7 @@
 {
   "name": "TestSuiteProcess",
   "description": "UiPath Academy helper\r\n",
-  "main": "SHA_Check.xaml",
+  "main": "Main.xaml",
   "dependencies": {
     "UiPath.Mail.Activities": "[1.11.0-preview]",
     "UiPath.System.Activities": "[21.6.1-preview]",
@@ -55,6 +55,12 @@
     {
       "filePath": "SHA_Check.xaml",
       "uniqueId": "89e0b9fc-8518-482a-99d9-6bc39b878119",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "e3394d17-a9ae-4d6f-8589-bbb0f901c845",
       "input": [],
       "output": []
     }
